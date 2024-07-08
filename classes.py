@@ -26,6 +26,7 @@ class Circle(Shape):
     def __init__(self, color, radius: float) -> None:
         super().__init__(color)
         self.radius = radius
+        self.type = "circle"
 
     def calculate_area(self):
         """A method to calculate the area of the shape"""
@@ -39,6 +40,7 @@ class Rectangle(Shape):
         super().__init__(color)
         self.length = length
         self.width = width
+        self.type = "rectangle"
 
     def calculate_area(self):
         """A method to calculate the area of the shape"""
@@ -53,6 +55,7 @@ class Triangle(Shape):
         self.side1 = side1
         self.side2 = side2
         self.side3 = side3
+        self.type = "triangle"
 
     def calculate_area(self):
         """A method to calculate the area of the shape"""
